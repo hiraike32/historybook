@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import styles from "./Top.css";
 import TopLogo from "../TopLogo";
 import TopBackground from "../TopBackground";
+import Sidebar from "../Sidebar";
 
 const mapStateToProps = (state: any) => {
   return {};
@@ -19,6 +20,7 @@ class Top extends Component<any, {}> {
     return (
       <div className={styles.container} id="container">
         <TopBackground />
+        <Sidebar />
         <TopLogo />
       </div>
     );

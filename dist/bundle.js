@@ -195,6 +195,51 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./src/components/SideMenu/SideMenu.css":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./src/components/SideMenu/SideMenu.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".src-components-SideMenu-_sideMenuContainer_2EPRi {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: -17vw;\n  margin: auto;\n  background: rgb(15, 15, 15);\n  width: 17vw;\n  height: 70vh;\n  opacity: 0.7;\n  z-index: 10;\n}\n\n.src-components-SideMenu-_sideMenuBox_55amr {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 9vw;\n  margin: auto;\n  height: 60%;\n  padding: 10% 0;\n}\n\n.src-components-SideMenu-_sideMenu_BasMv {\n  font-size: 2.5vh;\n  margin-bottom: 4.25vh;\n  color: #c4c4c4;\n  cursor: pointer;\n  position: relative;\n}\n\n.src-components-SideMenu-_sideMenu_BasMv:nth-child(1):hover {\n  color: #ff0000;\n}\n\n.src-components-SideMenu-_sideMenu_BasMv:nth-child(2):hover {\n  color: #0df400;\n}\n\n.src-components-SideMenu-_sideMenu_BasMv:nth-child(3):hover {\n  color: #ffff1e;\n}\n\n.src-components-SideMenu-_sideMenu_BasMv:nth-child(4):hover {\n  color: #0afffb;\n}\n\n.src-components-SideMenu-_sideMenu_BasMv:nth-child(5):hover {\n  color: #f49e00;\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"sideMenuContainer": "src-components-SideMenu-_sideMenuContainer_2EPRi",
+	"sideMenuBox": "src-components-SideMenu-_sideMenuBox_55amr",
+	"sideMenu": "src-components-SideMenu-_sideMenu_BasMv"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./src/containers/Sidebar/Sidebar.css":
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./src/containers/Sidebar/Sidebar.css ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".src-containers-Sidebar-_sideIconContainer_3xjNC {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  background: rgb(39, 39, 39);\n  width: 6vw;\n  height: 6vw;\n  z-index: 20;\n  cursor: pointer;\n}\n\n.src-containers-Sidebar-_sideIcon_1ocUZ {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n  width: 50%;\n  height: 50%;\n  fill: none;\n  border: 3px inset #f49e00;\n  border-radius: 50%;\n  vertical-align: middle;\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"sideIconContainer": "src-containers-Sidebar-_sideIconContainer_3xjNC",
+	"sideIcon": "src-containers-Sidebar-_sideIcon_1ocUZ"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./src/containers/Top/Top.css":
 /*!************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./src/containers/Top/Top.css ***!
@@ -262,7 +307,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".src-containers-TopLogo-_name_2aKvf {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n  width: 34vmin;\n  height: 7vmin;\n  color: #fff;\n}\n\n.src-containers-TopLogo-_letter_2QvUo {\n  font-size: 5vmin;\n}\n", ""]);
+exports.push([module.i, ".src-containers-TopLogo-_name_2aKvf {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n  width: 34vmin;\n  height: 7vmin;\n  color: #fff;\n  pointer-events: none;\n}\n\n.src-containers-TopLogo-_letter_2QvUo {\n  font-size: 5vmin;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -25117,6 +25162,26 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
+/***/ "./src/actions/Sidebar.tsx":
+/*!*********************************!*\
+  !*** ./src/actions/Sidebar.tsx ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.changeSidebar = (isOpenSidebar) => {
+    return {
+        isOpenSidebar,
+        type: "CHANGE_SIDEBAR"
+    };
+};
+
+
+/***/ }),
+
 /***/ "./src/actions/TopBackground.tsx":
 /*!***************************************!*\
   !*** ./src/actions/TopBackground.tsx ***!
@@ -25133,6 +25198,109 @@ exports.initBgAnimation = (animes) => {
         animes
     };
 };
+
+
+/***/ }),
+
+/***/ "./src/components/SideMenu/SideMenu.css":
+/*!**********************************************!*\
+  !*** ./src/components/SideMenu/SideMenu.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!./SideMenu.css */ "./node_modules/css-loader/index.js?!./src/components/SideMenu/SideMenu.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"sourceMap":true,"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/SideMenu/SideMenu.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/SideMenu/SideMenu.tsx ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const animejs_1 = __importDefault(__webpack_require__(/*! animejs */ "./node_modules/animejs/anime.min.js"));
+const SideMenu_css_1 = __importDefault(__webpack_require__(/*! ./SideMenu.css */ "./src/components/SideMenu/SideMenu.css"));
+class SideMenu extends react_1.Component {
+    constructor(props) {
+        super(props);
+    }
+    componentWillReceiveProps() {
+        const openSideMenu = animejs_1.default({
+            targets: "#openSideMenu",
+            left: "0",
+            easing: "easeInOutQuint"
+        });
+        const closeSideMenu = animejs_1.default({
+            targets: "#closeSideMenu",
+            left: "-17vw",
+            easing: "easeInOutQuart"
+        });
+    }
+    render() {
+        return (react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenuContainer, id: this.props.isOpenSidebar ? "openSideMenu" : "closeSideMenu" },
+            react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenuBox },
+                react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenu }, "About"),
+                react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenu }, "Picture"),
+                react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenu }, "Movie"),
+                react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenu }, "Write"),
+                react_1.default.createElement("div", { className: SideMenu_css_1.default.sideMenu }, "Code"))));
+    }
+}
+exports.default = SideMenu;
+
+
+/***/ }),
+
+/***/ "./src/components/SideMenu/index.tsx":
+/*!*******************************************!*\
+  !*** ./src/components/SideMenu/index.tsx ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const SideMenu_1 = __importDefault(__webpack_require__(/*! ./SideMenu */ "./src/components/SideMenu/SideMenu.tsx"));
+exports.default = SideMenu_1.default;
 
 
 /***/ }),
@@ -25202,6 +25370,125 @@ exports.default = react_redux_1.connect(mapStateToProps, mapDispatchToProps)(Roo
 
 /***/ }),
 
+/***/ "./src/containers/Sidebar/Sidebar.css":
+/*!********************************************!*\
+  !*** ./src/containers/Sidebar/Sidebar.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!./Sidebar.css */ "./node_modules/css-loader/index.js?!./src/containers/Sidebar/Sidebar.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"sourceMap":true,"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/containers/Sidebar/Sidebar.tsx":
+/*!********************************************!*\
+  !*** ./src/containers/Sidebar/Sidebar.tsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+const animejs_1 = __importDefault(__webpack_require__(/*! animejs */ "./node_modules/animejs/anime.min.js"));
+const Sidebar_css_1 = __importDefault(__webpack_require__(/*! ./Sidebar.css */ "./src/containers/Sidebar/Sidebar.css"));
+const Sidebar_1 = __webpack_require__(/*! ../../actions/Sidebar */ "./src/actions/Sidebar.tsx");
+const SideMenu_1 = __importDefault(__webpack_require__(/*! ../../components/SideMenu */ "./src/components/SideMenu/index.tsx"));
+const mapStateToProps = (state) => {
+    return { isOpenSidebar: state.sidebarReducer.isOpenSidebar };
+};
+const mapDispatchToProps = (dispatch) => {
+    return {
+        changeSidebar: (isOpenSidebar) => dispatch(Sidebar_1.changeSidebar(isOpenSidebar))
+    };
+};
+class Sidebar extends react_1.Component {
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        const startBg = animejs_1.default({
+            targets: "#sideIcon",
+            borderColor: [
+                { value: "#ff0000" },
+                { value: "#0df400" },
+                { value: "#ffff1e" },
+                { value: "#e60aff" },
+                { value: "#0afffb" },
+                { value: "#f49e00" }
+            ],
+            rotate: {
+                value: "4turn",
+                duration: 20000,
+                easing: "easeInOutSine"
+            },
+            duration: 20000,
+            loop: true
+        });
+    }
+    render() {
+        return (react_1.default.createElement("div", null,
+            react_1.default.createElement("div", { className: Sidebar_css_1.default.sideIconContainer, onClick: () => this.props.changeSidebar(!this.props.isOpenSidebar) },
+                react_1.default.createElement("div", { id: "sideIcon", className: Sidebar_css_1.default.sideIcon })),
+            react_1.default.createElement(SideMenu_1.default, { isOpenSidebar: !this.props.isOpenSidebar })));
+    }
+}
+exports.default = react_redux_1.connect(mapStateToProps, mapDispatchToProps)(Sidebar);
+
+
+/***/ }),
+
+/***/ "./src/containers/Sidebar/index.tsx":
+/*!******************************************!*\
+  !*** ./src/containers/Sidebar/index.tsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Sidebar_1 = __importDefault(__webpack_require__(/*! ./Sidebar */ "./src/containers/Sidebar/Sidebar.tsx"));
+exports.default = Sidebar_1.default;
+
+
+/***/ }),
+
 /***/ "./src/containers/Top/Top.css":
 /*!************************************!*\
   !*** ./src/containers/Top/Top.css ***!
@@ -25257,6 +25544,7 @@ const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/rea
 const Top_css_1 = __importDefault(__webpack_require__(/*! ./Top.css */ "./src/containers/Top/Top.css"));
 const TopLogo_1 = __importDefault(__webpack_require__(/*! ../TopLogo */ "./src/containers/TopLogo/index.tsx"));
 const TopBackground_1 = __importDefault(__webpack_require__(/*! ../TopBackground */ "./src/containers/TopBackground/index.tsx"));
+const Sidebar_1 = __importDefault(__webpack_require__(/*! ../Sidebar */ "./src/containers/Sidebar/index.tsx"));
 const mapStateToProps = (state) => {
     return {};
 };
@@ -25267,6 +25555,7 @@ class Top extends react_1.Component {
     render() {
         return (react_1.default.createElement("div", { className: Top_css_1.default.container, id: "container" },
             react_1.default.createElement(TopBackground_1.default, null),
+            react_1.default.createElement(Sidebar_1.default, null),
             react_1.default.createElement(TopLogo_1.default, null)));
     }
 }
@@ -25563,6 +25852,31 @@ react_dom_1.default.render(react_1.default.createElement(react_redux_1.Provider,
 
 /***/ }),
 
+/***/ "./src/reducers/SideBar.tsx":
+/*!**********************************!*\
+  !*** ./src/reducers/SideBar.tsx ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const sidebarReducer = (state = {
+    isOpenSidebar: false
+}, action) => {
+    switch (action.type) {
+        case "CHANGE_SIDEBAR":
+            return Object.assign({}, state, { isOpenSidebar: action.isOpenSidebar });
+        default:
+            return state;
+    }
+};
+exports.default = sidebarReducer;
+
+
+/***/ }),
+
 /***/ "./src/reducers/TopBackground.tsx":
 /*!****************************************!*\
   !*** ./src/reducers/TopBackground.tsx ***!
@@ -25603,7 +25917,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 const TopBackground_1 = __importDefault(__webpack_require__(/*! ./TopBackground */ "./src/reducers/TopBackground.tsx"));
-exports.default = redux_1.combineReducers({ topBackgroundReducer: TopBackground_1.default });
+const SideBar_1 = __importDefault(__webpack_require__(/*! ./SideBar */ "./src/reducers/SideBar.tsx"));
+exports.default = redux_1.combineReducers({ topBackgroundReducer: TopBackground_1.default, sidebarReducer: SideBar_1.default });
 
 
 /***/ }),
