@@ -19,11 +19,13 @@
   margin: auto;
   height: 60%;
   padding: 10% 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 .sideMenu {
-  font-size: 2.5vh;
-  margin-bottom: 4.25vh;
+  font-size: 2vh;
   color: #c4c4c4;
   cursor: pointer;
   position: relative;
@@ -47,4 +49,8 @@
 
 .sideMenu:nth-child(5):hover {
   color: #f49e00;
+}
+
+.sideMenuBox a:hover {
+  text-decoration: none;
 }

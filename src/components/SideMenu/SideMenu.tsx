@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import anime from "animejs";
 
 import styles from "./SideMenu.css";
+import { Link } from "react-router-dom";
 
 class SideMenu extends Component<any, {}> {
   constructor(props: any) {
@@ -26,11 +27,21 @@ class SideMenu extends Component<any, {}> {
         id={this.props.isOpenSidebar ? "openSideMenu" : "closeSideMenu"}
       >
         <div className={styles.sideMenuBox}>
-          <div className={styles.sideMenu}>About</div>
-          <div className={styles.sideMenu}>Picture</div>
-          <div className={styles.sideMenu}>Movie</div>
-          <div className={styles.sideMenu}>Write</div>
-          <div className={styles.sideMenu}>Code</div>
+          <Link to="/">
+            <div className={styles.sideMenu}>HOME</div>
+          </Link>
+          <Link to="/about">
+            <div className={styles.sideMenu}>ABOUT</div>
+          </Link>
+          <Link to="/works">
+            <div className={styles.sideMenu}>WORKS</div>
+          </Link>
+          <Link to="/photo">
+            <div className={styles.sideMenu}>PHOTO</div>
+          </Link>
+          <Link to="/contact">
+            <div className={styles.sideMenu}>CONTACT</div>
+          </Link>
         </div>
       </div>
     );
