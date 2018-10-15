@@ -9,16 +9,33 @@ class SideMenu extends Component<any, {}> {
     super(props);
   }
   componentWillReceiveProps() {
-    const openSideMenu = anime({
-      targets: "#openSideMenu",
-      left: "0",
-      easing: "easeInOutQuint"
-    });
-    const closeSideMenu = anime({
-      targets: "#closeSideMenu",
-      left: "-17vw",
-      easing: "easeInOutQuart"
-    });
+    if (window.innerWidth <= 960) {
+      const openSideMenu = anime({
+        targets: "#openSideMenu",
+        top: "0",
+        opacity: "0.8",
+        easing: "easeInOutQuint"
+      });
+      const closeSideMenu = anime({
+        targets: "#closeSideMenu",
+        top: "-100vh",
+        opacity: "0",
+        easing: "easeInOutQuart"
+      });
+    } else {
+      const openSideMenu = anime({
+        targets: "#openSideMenu",
+        left: "0",
+        opacity: "0.8",
+        easing: "easeInOutQuint"
+      });
+      const closeSideMenu = anime({
+        targets: "#closeSideMenu",
+        left: "-20vw",
+        opacity: "0",
+        easing: "easeInOutQuart"
+      });
+    }
   }
   render() {
     return (

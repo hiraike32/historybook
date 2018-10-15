@@ -2,8 +2,13 @@ import React, { Component } from "react";
 import Redux from "redux";
 import { connect } from "react-redux";
 import anime from "animejs";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./About.css";
+
+library.add(faTimes);
 
 const mapStateToProps = (state: any) => {
   return {};
@@ -14,6 +19,42 @@ const mapDispatchToProps = (dispatch: Redux.Dispatch): any => {
 };
 
 class About extends Component<any, {}> {
+  spOpenDetail = () => {
+    const openDetailTimeline = anime.timeline();
+    openDetailTimeline
+      .add({
+        targets: "#detailContainer",
+        zIndex: 30,
+        duration: 10
+      })
+      .add({
+        targets: "#detailContainer",
+        opacity: 0.9,
+        easing: "easeInOutSine",
+        duration: 500
+      })
+      .add({
+        targets: "#detailContainer div",
+        opacity: [0, 0.9],
+        easing: "easeInOutSine",
+        delay: function(el, index) {
+          return index * 50;
+        }
+      });
+  };
+  spCloseDetail = () => {
+    const openDetailTimeline = anime.timeline();
+    openDetailTimeline
+      .add({
+        targets: "#detailContainer",
+        opacity: 0,
+        easing: "easeInOutSine"
+      })
+      .add({
+        targets: "#detailContainer",
+        zIndex: 0
+      });
+  };
   render() {
     return (
       <div className={styles.container}>
@@ -26,10 +67,16 @@ class About extends Component<any, {}> {
         <div className={styles.background} />
         <div className={styles.title}>
           <div className={styles.titleFont}>ABOUT</div>
+          <div className={styles.spButton} onClick={this.spOpenDetail}>
+            more
+          </div>
         </div>
         {/* 右画面 */}
-        <div className={styles.detailContainer}>
+        <div className={styles.detailContainer} id="detailContainer">
           <div className={styles.detail}>
+            <div onClick={this.spCloseDetail}>
+              <FontAwesomeIcon icon="times" className={styles.closeIcon} />
+            </div>
             <div className={styles.detailTitle}>平池 拓也（24）</div>
             <div className={styles.detailText}>
               Webフロントエンドエンジニア

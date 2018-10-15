@@ -1,14 +1,29 @@
-.sideIconContainer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background: rgb(39, 39, 39);
-  width: 6vw;
-  height: 6vw;
-  z-index: 20;
-  cursor: pointer;
+@media (max-width: 960px) {
+  .sideIconContainer {
+    position: absolute;
+    top: 0;
+    right: 3vw;
+    background: rgb(39, 39, 39);
+    width: 3rem;
+    height: 3rem;
+    z-index: 20;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 960px) {
+  .sideIconContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgb(39, 39, 39);
+    width: 6vw;
+    height: 6vw;
+    z-index: 20;
+    cursor: pointer;
+  }
 }
 
 .sideIcon {
