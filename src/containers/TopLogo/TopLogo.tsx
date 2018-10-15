@@ -39,7 +39,7 @@ class TopLogo extends Component<any, { clickId: number; closeId: number }> {
         <span className={classNames(styles.letter)}>u</span>
         <span className={classNames(styles.letter)}>y</span>
         <span className={classNames(styles.letter)}>a</span>
-        <span className={classNames(styles.letter)}> </span>
+        <span className={classNames(styles.letter)}>&nbsp;</span>
         <span className={classNames(styles.letter)}>H</span>
         <span className={classNames(styles.letter)}>i</span>
         <span className={classNames(styles.letter)}>r</span>
