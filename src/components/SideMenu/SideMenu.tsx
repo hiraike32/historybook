@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import anime from "animejs";
+import classNames from "classnames";
 
 import styles from "./SideMenu.css";
 import { Link } from "react-router-dom";
@@ -45,19 +46,44 @@ class SideMenu extends Component<any, {}> {
       >
         <div className={styles.sideMenuBox}>
           <Link to="/">
-            <div className={styles.sideMenu}>HOME</div>
+            <div
+              className={classNames(styles.sideMenu, styles.redHover)}
+              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+            >
+              HOME
+            </div>
           </Link>
           <Link to="/about">
-            <div className={styles.sideMenu}>ABOUT</div>
+            <div
+              className={classNames(styles.sideMenu, styles.greenHover)}
+              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+            >
+              ABOUT
+            </div>
           </Link>
           <Link to="/works">
-            <div className={styles.sideMenu}>WORKS</div>
+            <div
+              className={classNames(styles.sideMenu, styles.yellowHover)}
+              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+            >
+              WORKS
+            </div>
           </Link>
           <Link to="/photo">
-            <div className={styles.sideMenu}>PHOTO</div>
+            <div
+              className={classNames(styles.sideMenu, styles.blueHover)}
+              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+            >
+              PHOTO
+            </div>
           </Link>
           <Link to="/contact">
-            <div className={styles.sideMenu}>CONTACT</div>
+            <div
+              className={classNames(styles.sideMenu, styles.orangeHover)}
+              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+            >
+              CONTACT
+            </div>
           </Link>
         </div>
       </div>

@@ -55,23 +55,23 @@
   position: relative;
 }
 
-.sideMenu:nth-child(1):hover {
+.redHover:hover {
   color: #ff0000;
 }
 
-.sideMenu:nth-child(2):hover {
+.greenHover:hover {
   color: #0df400;
 }
 
-.sideMenu:nth-child(3):hover {
+.yellowHover:hover {
   color: #ffff1e;
 }
 
-.sideMenu:nth-child(4):hover {
+.blueHover:hover {
   color: #0afffb;
 }
 
-.sideMenu:nth-child(5):hover {
+.orangeHover:hover {
   color: #f49e00;
 }
 

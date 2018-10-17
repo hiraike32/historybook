@@ -52,7 +52,10 @@ class Sidebar extends Component<any, {}> {
         >
           <div id="sideIcon" className={styles.sideIcon} />
         </div>
-        <SideMenu isOpenSidebar={!this.props.isOpenSidebar} />
+        <SideMenu
+          isOpenSidebar={!this.props.isOpenSidebar}
+          changeSidebar={this.props.changeSidebar}
+        />
       </div>
     );
   }
