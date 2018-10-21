@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Redux from "redux";
-import { connect } from "react-redux";
 import anime from "animejs";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,14 +7,6 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import styles from "./About.css";
 
 library.add(faTimes);
-
-const mapStateToProps = (state: any) => {
-  return {};
-};
-
-const mapDispatchToProps = (dispatch: Redux.Dispatch): any => {
-  return {};
-};
 
 class About extends Component<any, {}> {
   spOpenDetail = () => {
