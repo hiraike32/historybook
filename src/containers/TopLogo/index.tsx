@@ -1,3 +1,1 @@
-import TopLogo from "./TopLogo";
-
-export default TopLogo;
+export { default } from "./TopLogo";

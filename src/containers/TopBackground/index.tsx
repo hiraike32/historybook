@@ -1,3 +1,1 @@
-import TopBackground from "./TopBackground";
-
-export default TopBackground;
+export { default } from "./TopBackground";
