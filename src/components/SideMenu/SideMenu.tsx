@@ -39,16 +39,17 @@ class SideMenu extends Component<any, {}> {
     }
   }
   render() {
+    const { isOpenSidebar } = this.props;
     return (
       <div
         className={styles.sideMenuContainer}
-        id={this.props.isOpenSidebar ? "openSideMenu" : "closeSideMenu"}
+        id={isOpenSidebar ? "openSideMenu" : "closeSideMenu"}
       >
         <div className={styles.sideMenuBox}>
           <Link to="/">
             <div
               className={classNames(styles.sideMenu, styles.redHover)}
-              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+              onClick={() => this.props.changeSidebar(isOpenSidebar)}
             >
               HOME
             </div>
@@ -56,7 +57,7 @@ class SideMenu extends Component<any, {}> {
           <Link to="/about">
             <div
               className={classNames(styles.sideMenu, styles.greenHover)}
-              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+              onClick={() => this.props.changeSidebar(isOpenSidebar)}
             >
               ABOUT
             </div>
@@ -64,7 +65,7 @@ class SideMenu extends Component<any, {}> {
           <Link to="/works">
             <div
               className={classNames(styles.sideMenu, styles.yellowHover)}
-              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+              onClick={() => this.props.changeSidebar(isOpenSidebar)}
             >
               WORKS
             </div>
@@ -72,7 +73,7 @@ class SideMenu extends Component<any, {}> {
           <Link to="/photo">
             <div
               className={classNames(styles.sideMenu, styles.blueHover)}
-              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+              onClick={() => this.props.changeSidebar(isOpenSidebar)}
             >
               PHOTO
             </div>
@@ -80,7 +81,7 @@ class SideMenu extends Component<any, {}> {
           <Link to="/contact">
             <div
               className={classNames(styles.sideMenu, styles.orangeHover)}
-              onClick={() => this.props.changeSidebar(this.props.isOpenSidebar)}
+              onClick={() => this.props.changeSidebar(isOpenSidebar)}
             >
               CONTACT
             </div>

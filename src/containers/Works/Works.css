@@ -1,0 +1,22 @@
+.container {
+  overflow: hidden;
+}
+
+.leftContent {
+  position: fixed;
+  width: 30vw;
+  height: 100vh;
+  color: #d6d6d6;
+  overflow: scroll;
+}
+
+.workDetail {
+  padding: 15% 10%;
+}
+
+.rightContent {
+  position: fixed;
+  width: 70vw;
+  height: 100vh;
+  right: 0;
+}

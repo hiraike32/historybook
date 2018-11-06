@@ -8,6 +8,7 @@ import styles from "../styles/transition.css";
 import Top from "../containers/Top";
 import Sidebar from "./Sidebar";
 import About from "./About";
+import Works from "./Works";
 
 const Root = ({ location }: any) => {
   const currentkey = "/" + location.pathname.split("/")[1];
@@ -29,6 +30,7 @@ const Root = ({ location }: any) => {
             <Switch location={location}>
               <Route exact path="/" component={Top} />
               <Route path="/about" component={About} />
+              <Route path="/works" component={Works} />
             </Switch>
           </div>
         </CSSTransition>

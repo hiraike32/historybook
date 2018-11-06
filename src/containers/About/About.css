@@ -2,6 +2,7 @@
   overflow: hidden;
 }
 
+/* 左背景のSP表示 */
 @media (max-width: 960px) {
   .background {
     width: 100vw;
@@ -22,6 +23,7 @@
   }
 }
 
+/* 左背景のPC表示 */
 @media (min-width: 960px) {
   .background {
     width: 70vw;
@@ -43,33 +45,25 @@
 }
 
 .background:nth-child(1) {
-  background: #ff0000;
   animation-delay: -1.2s;
 }
 
-.background:nth-child(2) {
-  background: #0df400;
-}
-
 .background:nth-child(3) {
-  background: #ffff1e;
   animation-delay: 1.2s;
 }
 
 .background:nth-child(4) {
-  background: #0afffb;
   animation-delay: 2.4s;
 }
 
 .background:nth-child(5) {
-  background: #3a3dff;
   animation-delay: 3.6s;
 }
 .background:nth-child(6) {
-  background: #c73aff;
   animation-delay: 4.8s;
 }
 
+/* 右コンテンツのSP表示 */
 @media (max-width: 960px) {
   .title {
     width: 100vw;
@@ -118,6 +112,7 @@
   }
 }
 
+/* 右コンテンツのPC表示 */
 @media (min-width: 960px) {
   .title {
     width: 70vw;
