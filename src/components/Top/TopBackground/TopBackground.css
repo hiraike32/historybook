@@ -42,6 +42,14 @@
   animation: scaleup6 20s linear infinite;
 }
 
+.bgRotate7 {
+  animation: scaleup7 20s linear infinite;
+}
+
+.bgRotate8 {
+  animation: scaleup8 20s linear infinite;
+}
+
 @keyframes scaleup1 {
   0% {
     opacity: 0;
@@ -141,5 +149,39 @@
   100% {
     opacity: 0;
     transform: translate3d(0, 0, 6vmin) rotate(-160deg);
+  }
+}
+
+@keyframes scaleup7 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin) rotate(-190deg);
+  }
+}
+
+@keyframes scaleup8 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin) rotate(170deg);
   }
 }

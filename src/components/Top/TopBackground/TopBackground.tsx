@@ -3,7 +3,7 @@ import anime, { random } from "animejs";
 import ClassNames from "classnames";
 
 import styles from "./TopBackground.css";
-import bgColors from "../../const/bgColors";
+import bgColors from "../../../const/bgColors";
 
 type State = {
   animes: string[];
@@ -20,7 +20,7 @@ class TopBackground extends Component<{}, State> {
     for (let i = 0; i < 40; i++) {
       let anime = "";
       for (let i = 0; i < random(35, 40); i++) {
-        let scale = random(1, 5);
+        let scale = random(2, 4);
         let tmpAnime = `radial-gradient(${
           bgColors[random(0, bgColors.length - 1)]
         } 30%,transparent 50%) ${random(15, 85)}% ${random(
@@ -55,7 +55,7 @@ class TopBackground extends Component<{}, State> {
             <div
               className={ClassNames(
                 styles.background,
-                styles[`bgRotate${random(1, 6)}`]
+                styles[`bgRotate${random(1, 8)}`]
               )}
               style={{
                 background: anime,

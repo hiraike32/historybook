@@ -5,7 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../styles/reset.css";
 import "../styles/base.css";
 import styles from "../styles/transition.css";
-import Top from "../containers/Top";
+import Top from "../components/Top";
 import Sidebar from "./Sidebar";
 import About from "./About";
 import Works from "./Works";
