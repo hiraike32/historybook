@@ -1,30 +1,53 @@
-const Text = [
+import React from "react";
+
+import portfolio from "./img/portfolio.png";
+import qiita from "./img/qiita.png";
+import note from "./img/note.jpg";
+
+const works = [
   {
-    name: "note",
-    works: [
-      {
-        title: `劣等感は最高だ。 〜卒論にかえて〜`,
-        img: "./img/note_graduate"
-      },
-      {
-        title: `エンジニアインターン生の幸と不幸`,
-        img: ""
-      }
-    ]
+    item: "portfolio",
+    url: "https://hiraike32.github.io/portfolio/",
+    src: portfolio,
+    title: "Portfolio",
+    detail: (
+      <span>
+        2017年に自作したポートフォリオサイト。
+        <br />
+        エンジニアを目指すための第一歩となった。
+      </span>
+    )
   },
   {
-    name: "qiita",
-    works: [
-      {
-        title: `Dockerのコンテナで"ssh: command not found"と表示されたときの対処法`,
-        img: ""
-      },
-      {
-        title: `【初心者歓迎】bashからfishに切り替えて快適なターミナル環境を構築しよう`,
-        img: ""
-      }
-    ]
+    item: "qiita",
+    url: "https://qiita.com/hiraike32",
+    src: qiita,
+    title: "Qiita",
+    detail: (
+      <span>
+        少しずつ技術記事を執筆
+        <br />
+        ・【初心者歓迎】bashからfishに切り替えて快適なターミナル環境を構築しよう
+        <br />
+        ・Dockerのコンテナで"ssh: command not found"と表示されたときの対処法
+      </span>
+    )
+  },
+  {
+    item: "note",
+    url: "https://note.mu/hiraike32",
+    src: note,
+    title: "note",
+    detail: (
+      <span>
+        思ったことを自由に記載
+        <br />
+        ・劣等感は最高だ。 〜卒論にかえて〜
+        <br />
+        ・エンジニアインターン生の幸と不幸
+      </span>
+    )
   }
 ];
 
-export default Text;
+export default works;
