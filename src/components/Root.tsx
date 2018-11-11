@@ -5,10 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../styles/reset.css";
 import "../styles/base.css";
 import styles from "../styles/transition.css";
-import Top from "../components/Top";
-import Sidebar from "./Sidebar";
-import About from "../components/About";
-import Works from "./Works";
+import { About, Sidebar, Top, Works } from ".";
 
 const Root = ({ location }: any) => {
   const currentkey = "/" + location.pathname.split("/")[1];

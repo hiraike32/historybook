@@ -5,11 +5,37 @@ import classNames from "classnames";
 import styles from "./SideMenu.css";
 import { Link } from "react-router-dom";
 
-class SideMenu extends Component<any, {}> {
-  constructor(props: any) {
-    super(props);
+const Links = [
+  {
+    link: "/",
+    style: "redHover",
+    name: "HOME"
+  },
+  {
+    link: "/about",
+    style: "greenHover",
+    name: "ABOUT"
+  },
+  {
+    link: "/works",
+    style: "blueHover",
+    name: "WORKS"
+  },
+  {
+    link: "/contact",
+    style: "orangeHover",
+    name: "CONTACT"
   }
+];
+
+type Props = {
+  isOpenSidebar: boolean;
+  changeSidebar: () => void;
+};
+
+class SideMenu extends Component<any, {}> {
   componentWillReceiveProps() {
+    // spでのサイドメニュー
     if (window.innerWidth <= 960) {
       const openSideMenu = anime({
         targets: "#openSideMenu",
@@ -23,7 +49,8 @@ class SideMenu extends Component<any, {}> {
         opacity: "0",
         easing: "easeInOutQuart"
       });
-    } else {
+    } // pcでのサイドメニュー
+    else {
       const openSideMenu = anime({
         targets: "#openSideMenu",
         left: "0",
@@ -46,38 +73,18 @@ class SideMenu extends Component<any, {}> {
         id={isOpenSidebar ? "openSideMenu" : "closeSideMenu"}
       >
         <div className={styles.sideMenuBox}>
-          <Link to="/">
-            <div
-              className={classNames(styles.sideMenu, styles.redHover)}
-              onClick={() => this.props.changeSidebar(isOpenSidebar)}
-            >
-              HOME
-            </div>
-          </Link>
-          <Link to="/about">
-            <div
-              className={classNames(styles.sideMenu, styles.greenHover)}
-              onClick={() => this.props.changeSidebar(isOpenSidebar)}
-            >
-              ABOUT
-            </div>
-          </Link>
-          <Link to="/works">
-            <div
-              className={classNames(styles.sideMenu, styles.yellowHover)}
-              onClick={() => this.props.changeSidebar(isOpenSidebar)}
-            >
-              WORKS
-            </div>
-          </Link>
-          <Link to="/contact">
-            <div
-              className={classNames(styles.sideMenu, styles.orangeHover)}
-              onClick={() => this.props.changeSidebar(isOpenSidebar)}
-            >
-              CONTACT
-            </div>
-          </Link>
+          {Links.map(link => {
+            return (
+              <Link to={link.link}>
+                <div
+                  className={classNames(styles.sideMenu, styles[link.style])}
+                  onClick={() => this.props.changeSidebar()}
+                >
+                  {link.name}
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     );
