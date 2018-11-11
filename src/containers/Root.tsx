@@ -7,7 +7,7 @@ import "../styles/base.css";
 import styles from "../styles/transition.css";
 import Top from "../components/Top";
 import Sidebar from "./Sidebar";
-import About from "./About";
+import About from "../components/About";
 import Works from "./Works";
 
 const Root = ({ location }: any) => {
