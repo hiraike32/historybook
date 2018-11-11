@@ -75,7 +75,7 @@ class SideMenu extends Component<any, {}> {
         <div className={styles.sideMenuBox}>
           {Links.map(link => {
             return (
-              <Link to={link.link}>
+              <Link to={link.link} key={link.link}>
                 <div
                   className={classNames(styles.sideMenu, styles[link.style])}
                   onClick={() => this.props.changeSidebar()}

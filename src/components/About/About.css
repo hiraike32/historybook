@@ -105,9 +105,9 @@
     overflow: scroll;
   }
   .closeIcon {
-    position: absolute;
-    top: 5%;
-    right: 10%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
     cursor: pointer;
   }
 }
