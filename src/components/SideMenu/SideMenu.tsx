@@ -70,14 +70,6 @@ class SideMenu extends Component<any, {}> {
               WORKS
             </div>
           </Link>
-          <Link to="/photo">
-            <div
-              className={classNames(styles.sideMenu, styles.blueHover)}
-              onClick={() => this.props.changeSidebar(isOpenSidebar)}
-            >
-              PHOTO
-            </div>
-          </Link>
           <Link to="/contact">
             <div
               className={classNames(styles.sideMenu, styles.orangeHover)}
