@@ -1,0 +1,91 @@
+@import "../../../../styles/colors";
+
+.panel {
+  width: 200vw;
+  height: 200vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.panel0 {
+  animation: movePanel0 10s linear infinite;
+  background: linear-gradient(45deg, $bgColor0, $bgColor1, $bgColor2);
+}
+
+.panel1 {
+  animation: movePanel1 10s linear infinite;
+  background: linear-gradient(0deg, $bgColor3, $bgColor4);
+}
+
+.panel2 {
+  animation: movePanel2 10s linear infinite;
+  background: linear-gradient(-45deg, $bgColor5, $bgColor6);
+}
+
+@keyframes movePanel0 {
+  0% {
+    top: -100vh;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.2;
+    top: 0;
+    left: -100vw;
+  }
+
+  100% {
+    top: -100vh;
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+@keyframes movePanel1 {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+  }
+
+  50% {
+    top: -100vh;
+    left: 0;
+    opacity: 0.3;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+  }
+}
+
+@keyframes movePanel2 {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  30% {
+    opacity: 0.1;
+  }
+
+  50% {
+    top: -100vh;
+    left: -100vw;
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0.1;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+}

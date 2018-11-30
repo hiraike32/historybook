@@ -1,0 +1,54 @@
+@import "../../../../styles/colors";
+
+.sideMenuContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15rem;
+  margin: auto;
+  background: $side-menu-black;
+  width: 15rem;
+  height: 30rem;
+  opacity: 0;
+  z-index: 10;
+}
+
+.sideMenuBox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7.5rem;
+  margin: auto;
+  height: 60%;
+  padding: 10% 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.sideMenu {
+  font-size: 0.8rem;
+  color: $font-white;
+  cursor: pointer;
+  position: relative;
+}
+
+.redHover:hover {
+  color: $bgColor0;
+}
+
+.greenHover:hover {
+  color: $bgColor4;
+}
+
+.blueHover:hover {
+  color: $bgColor1;
+}
+
+.orangeHover:hover {
+  color: $bgColor2;
+}
+
+.sideMenuBox a:hover {
+  text-decoration: none;
+}

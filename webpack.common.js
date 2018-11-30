@@ -21,7 +21,7 @@ module.exports = {
         loader: "ts-loader"
       },
       {
-        test: /\.css$/,
+        test: /\.s?css$/,
         include: [path.join(__dirname, "src")],
         use: [
           {
@@ -38,6 +38,10 @@ module.exports = {
               importLoaders: 1,
               localIdentName: "[path]_[local]_[hash:base64:5]"
             }
+          },
+          {
+            loader: "sass-loader",
+            options: { sourceMap: true }
           }
         ]
       },
@@ -55,6 +59,6 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx", ".css"]
+    extensions: [".js", ".jsx", ".ts", ".tsx", ".scss"]
   }
 };
