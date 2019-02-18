@@ -2,11 +2,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import anime from "animejs";
+import classNames from "classnames/bind";
 import React, { Component } from "react";
-
 import bgColors from "../../../const/bgColors";
 import abouts from "../../Common/About/assets";
 import styles from "./About.scss";
+
+const cx = classNames.bind(styles);
 
 library.add(faTimes);
 
@@ -51,33 +53,33 @@ class About extends Component<{}> {
 
   render() {
     return (
-      <div className={styles.container}>
+      <div className={cx("container")}>
         {bgColors.map(bgColor => {
           return (
             <div
-              className={styles.background}
+              className={cx("background")}
               style={{ background: bgColor }}
               key={bgColor}
             />
           );
         })}
-        <div className={styles.title}>
-          <h1 className={styles.titleFont}>ABOUT</h1>
-          <div className={styles.spButton} onClick={this.openDetail}>
+        <div className={cx("title")}>
+          <h1 className={cx("titleFont")}>ABOUT</h1>
+          <div className={cx("spButton")} onClick={this.openDetail}>
             more
           </div>
         </div>
-        <div className={styles.detailContainer} id="detailContainer">
-          <div className={styles.detail}>
-            <div onClick={this.closeDetail} className={styles.closeDetail}>
-              <FontAwesomeIcon icon="times" className={styles.closeIcon} />
+        <div className={cx("detailContainer")} id="detailContainer">
+          <div className={cx("detail")}>
+            <div onClick={this.closeDetail} className={cx("closeDetail")}>
+              <FontAwesomeIcon icon="times" className={cx("closeIcon")} />
             </div>
-            <div className={styles.detailTitle}>Takuya Hiraike（24）</div>
+            <div className={cx("detailTitle")}>Takuya Hiraike（24）</div>
             {abouts.map(about => {
               return (
-                <div className={styles.detailText} key={about.title}>
+                <div className={cx("detailText")} key={about.title}>
                   {about.title}
-                  <div className={styles.darkFont}>{about.detail}</div>
+                  <div className={cx("darkFont")}>{about.detail}</div>
                 </div>
               );
             })}

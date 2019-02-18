@@ -1,26 +1,28 @@
+import classNames from "classnames/bind";
 import React from "react";
-
 import mail from "../../Common/Contact/mail.png";
 import twitter from "../../Common/Contact/twittter.png";
 import Background from "./Background";
 import styles from "./Contact.scss";
 
+const cx = classNames.bind(styles);
+
 const Contact = () => (
-  <div className={styles.container}>
+  <div className={cx("container")}>
     <Background />
     <h1>Contact</h1>
     <a
       href="https://twitter.com/hiraike32"
       target="_blank"
-      className={styles.contact}
+      className={cx("contact")}
     >
-      <div className={styles.icon}>
+      <div className={cx("icon")}>
         <img src={twitter} />
       </div>
       hiraike32
     </a>
-    <a href="mailto:hiraike32@gmail.com" className={styles.contact}>
-      <div className={styles.icon}>
+    <a href="mailto:hiraike32@gmail.com" className={cx("contact")}>
+      <div className={cx("icon")}>
         <img src={mail} />
       </div>
       hiraike32@gmail.com

@@ -1,10 +1,12 @@
+import classNames from "classnames/bind";
 import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
 import { About, Sidebar, Top, Works } from ".";
 import "../../styles/reset.scss";
 import styles from "../../styles/transition.scss";
+
+const cx = classNames.bind(styles);
 
 const Root = ({ location }: any) => {
   const currentkey = "/" + location.pathname.split("/")[1];
@@ -14,15 +16,15 @@ const Root = ({ location }: any) => {
         <CSSTransition
           key={currentkey}
           classNames={{
-            enter: styles.enter,
-            enterActive: styles.enterActive,
-            exit: styles.exit,
-            exitActive: styles.exitActive,
-            exitDone: styles.exitDone
+            enter: cx("enter"),
+            enterActive: cx("enterActive"),
+            exit: cx("exit"),
+            exitActive: cx("exitActive"),
+            exitDone: cx("exitDone")
           }}
           timeout={3000}
         >
-          <div className={styles.routeWrapper}>
+          <div className={cx("routeWrapper")}>
             <Switch location={location}>
               <Route exact={true} path="/" component={Top} />
               <Route path="/about" component={About} />

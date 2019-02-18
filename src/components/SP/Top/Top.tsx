@@ -1,11 +1,13 @@
+import classNames from "classnames";
 import React from "react";
-
 import TopBackground from "../../Common/Top/TopBackground";
 import styles from "./Top.scss";
 import TopLogo from "./TopLogo";
 
+const cx = classNames.bind(styles);
+
 const Top = () => (
-  <div className={styles.container} id="container">
+  <div className={cx("container")} id="container">
     <TopBackground />
     <TopLogo />
   </div>

@@ -1,9 +1,11 @@
 import anime, { random } from "animejs";
-import ClassNames from "classnames";
+import classNames from "classnames/bind";
 import React, { Component } from "react";
 
 import bgColors from "../../../../const/bgColors";
 import styles from "./TopBackground.scss";
+
+const cx = classNames.bind(styles);
 
 interface State {
   animes: string[];
@@ -49,14 +51,11 @@ class TopBackground extends Component<{}, State> {
 
   render() {
     return (
-      <div className={styles.bgContainer} id="bgContainer">
+      <div className={cx("bgContainer")} id="bgContainer">
         {this.state.animes.map((anime: string, index: number) => {
           return (
             <div
-              className={ClassNames(
-                styles.background,
-                styles[`bgRotate${random(1, 8)}`]
-              )}
+              className={cx("background", `bgRotate${random(1, 8)}`)}
               style={{
                 background: anime,
                 animationDelay: `-${index}s`

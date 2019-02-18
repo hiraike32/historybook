@@ -1,10 +1,11 @@
 import anime from "animejs";
-import classNames from "classnames";
+import classNames from "classnames/bind";
 import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
 import { Menus } from "../../../Common/Sidebar/const";
 import styles from "./SideMenu.scss";
+
+const cx = classNames.bind(styles);
 
 interface Props {
   isOpenSidebar: boolean;
@@ -31,15 +32,15 @@ class SideMenu extends Component<Props, {}> {
     const { isOpenSidebar, changeSidebar } = this.props;
     return (
       <div
-        className={styles.sideMenuContainer}
+        className={cx("sideMenuContainer")}
         id={isOpenSidebar ? "openSideMenu" : "closeSideMenu"}
       >
-        <div className={styles.sideMenuBox}>
+        <div className={cx("sideMenuBox")}>
           {Menus.map(menu => {
             return (
               <Link to={menu.link} key={menu.link}>
                 <div
-                  className={classNames(styles.sideMenu, styles[menu.style])}
+                  className={cx("sideMenu", menu.style)}
                   onClick={() => changeSidebar()}
                 >
                   {menu.name}

@@ -1,5 +1,8 @@
+import className from "classnames/bind";
 import React from "react";
 import styles from "./text.scss";
+
+const cx = className.bind(styles);
 
 interface About {
   title: string;
@@ -36,11 +39,11 @@ const abouts: About[] = [
     title: "Carrer",
     detail: (
       <span>
-        <div className={styles.workPeriod}>2018年8月~</div>
+        <div className={cx("workPeriod")}>2018年8月~</div>
         Dwango / Front End (JS - React)
-        <div className={styles.workPeriod}>2018年6月~</div>
+        <div className={cx("workPeriod")}>2018年6月~</div>
         Smiloops / Back End (PHP - Laravel)
-        <div className={styles.workPeriod}>2017年9月~</div>
+        <div className={cx("workPeriod")}>2017年9月~</div>
         Bravesoft / Front End (JS - jQuery)
       </span>
     )

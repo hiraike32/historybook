@@ -1,9 +1,11 @@
 import anime from "animejs";
+import classNames from "classnames/bind";
 import React, { Component } from "react";
-
 import { circleAnime } from "../../Common/Sidebar/const";
 import styles from "./Sidebar.scss";
 import SideMenu from "./SideMenu";
+
+const cx = classNames.bind(styles);
 
 interface State {
   isOpenSidebar: boolean;
@@ -25,8 +27,8 @@ class Sidebar extends Component<{}, State> {
   render() {
     return (
       <React.Fragment>
-        <div className={styles.sideIconContainer} onClick={this.changeSidebar}>
-          <div id="sideIcon" className={styles.sideIcon} />
+        <div className={cx("sideIconContainer")} onClick={this.changeSidebar}>
+          <div id="sideIcon" className={cx("sideIcon")} />
         </div>
         <SideMenu
           isOpenSidebar={!this.state.isOpenSidebar}

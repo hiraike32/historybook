@@ -1,8 +1,10 @@
 import anime from "animejs";
-import ClassNames from "classnames";
+import classNames from "classnames/bind";
 import React from "react";
 
 import styles from "./Background.scss";
+
+const cx = classNames.bind(styles);
 
 const lines = [0, 1, 2, 3, 4, 5, 6, 7];
 
@@ -22,12 +24,9 @@ class Background extends React.Component<{}> {
   }
   render() {
     return (
-      <div className={styles.container} id="lines">
+      <div className={cx("container")} id="lines">
         {lines.map((line, index) => (
-          <span
-            className={ClassNames(styles.border, styles[`border${line}`])}
-            key={index}
-          />
+          <span className={cx("border", `border${line}`)} key={index} />
         ))}
       </div>
     );
