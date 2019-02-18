@@ -1,23 +1,10 @@
 import React from "react";
 
-import note from "./img/note.jpg";
-import portfolio from "./img/portfolio.png";
+import blog from "./img/blog.png";
+import codepen from "./img/codepen.png";
 import qiita from "./img/qiita.png";
 
 const works = [
-  {
-    item: "portfolio",
-    url: "https://hiraike32.github.io/portfolio/",
-    src: portfolio,
-    title: "Portfolio",
-    detail: (
-      <span>
-        2017年に自作したポートフォリオサイト。
-        <br />
-        エンジニアを目指すための第一歩となった。
-      </span>
-    )
-  },
   {
     item: "qiita",
     url: "https://qiita.com/hiraike32",
@@ -25,26 +12,41 @@ const works = [
     title: "Qiita",
     detail: (
       <span>
-        少しずつ技術記事を執筆
+        技術に関する記事を投稿
         <br />
-        ・dwango.co.jpのモバイルページをReactでデザインから作り直してみた。
+        『新人プログラマをレビューで殺さない方法』
         <br />
-        ・【初心者歓迎】bashからfishに切り替えて快適なターミナル環境を構築しよう
+        『コミット時にtslintとstylelintを回してコードの品質を保証する』
       </span>
     )
   },
   {
-    item: "note",
-    url: "https://note.mu/hiraike32",
-    src: note,
-    title: "note",
+    item: "codepen",
+    url: "https://codepen.io/dashboard/",
+    src: codepen,
+    title: "codepen",
     detail: (
       <span>
-        思ったことを自由に記載
+        Post some design
         <br />
-        ・劣等感は最高だ。 〜卒論にかえて〜
+        『Rotate cube』
         <br />
-        ・エンジニアインターン生の幸と不幸
+        『Three.js Hello World!』
+      </span>
+    )
+  },
+  {
+    item: "blog",
+    url: "https://hiraike32.hatenablog.com/",
+    src: blog,
+    title: "blog",
+    detail: (
+      <span>
+        技術以外で考えたことなどを投稿
+        <br />
+        『ドワンゴでの内定者アルバイトを終えて』
+        <br />
+        『2019年の目標』
       </span>
     )
   }

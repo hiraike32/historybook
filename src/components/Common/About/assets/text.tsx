@@ -37,7 +37,7 @@ const abouts: About[] = [
     detail: (
       <span>
         <div className={styles.workPeriod}>2018年8月~</div>
-        Dwango / Front End (JS - Rect)
+        Dwango / Front End (JS - React)
         <div className={styles.workPeriod}>2018年6月~</div>
         Smiloops / Back End (PHP - Laravel)
         <div className={styles.workPeriod}>2017年9月~</div>
