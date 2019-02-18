@@ -19,7 +19,7 @@ const About = () => (
       <h1 className={styles.titleFont}>ABOUT</h1>
     </div>
     <div className={styles.detailContainer} id="detailContainer">
-      <div className={styles.detailTitle}>平池 拓也（24）</div>
+      <div className={styles.detailTitle}>Takuya Hiraike（24）</div>
       {abouts.map(about => {
         return (
           <div className={styles.detailText} key={about.title}>

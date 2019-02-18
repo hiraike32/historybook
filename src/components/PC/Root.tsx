@@ -3,7 +3,6 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import { About, Contact, Sidebar, Top, Works } from ".";
-import "../../styles/base.scss";
 import "../../styles/reset.scss";
 import styles from "../../styles/transition.scss";
 

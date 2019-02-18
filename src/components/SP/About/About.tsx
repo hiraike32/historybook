@@ -72,7 +72,7 @@ class About extends Component<{}> {
             <div onClick={this.closeDetail} className={styles.closeDetail}>
               <FontAwesomeIcon icon="times" className={styles.closeIcon} />
             </div>
-            <div className={styles.detailTitle}>平池 拓也（24）</div>
+            <div className={styles.detailTitle}>Takuya Hiraike（24）</div>
             {abouts.map(about => {
               return (
                 <div className={styles.detailText} key={about.title}>

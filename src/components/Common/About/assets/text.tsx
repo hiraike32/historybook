@@ -8,24 +8,24 @@ interface About {
 
 const abouts: About[] = [
   {
-    title: "Webフロントエンドエンジニア",
+    title: "Front End Engineer",
     detail: (
       <span>
         HTML / CSS / SCSS
         <br />
         ES6+ / TypeScript
         <br />
-        React / Redux / Bootstrap
+        react / redux
         <br />
-        Webpack / yarn / Storybook
+        webpack / yarn / storybook
         <br />
-        Git / Fish / Prettier
+        git / fish / prettier
         <br />
       </span>
     )
   },
   {
-    title: "ソースコード",
+    title: "Source Code",
     detail: (
       <a href="https://github.com/hiraike32" target="_blank">
         Github
@@ -33,38 +33,15 @@ const abouts: About[] = [
     )
   },
   {
-    title: "デジタルフォトグラファー",
-    detail: (
-      <span>
-        <a href="https://www.photo-ac.com/profile/1000333" target="_blank">
-          写真AC
-        </a>
-        に素材提供
-        <div className={styles.smallFont}>（総ダウンロード数6,500回）</div>
-      </span>
-    )
-  },
-  {
-    title: "市民ランナー",
-    detail: (
-      <span>
-        越後湯沢秋桜ハーフマラソン
-        <div className={styles.smallFont}>1時間58分59秒</div>
-      </span>
-    )
-  },
-  {
-    title: "経歴",
+    title: "Carrer",
     detail: (
       <span>
         <div className={styles.workPeriod}>2018年8月~</div>
-        株式会社ドワンゴ / 開発アルバイト
+        Dwango / Front End (JS - Rect)
         <div className={styles.workPeriod}>2018年6月~</div>
-        株式会社Smiloops / 開発インターン
+        Smiloops / Back End (PHP - Laravel)
         <div className={styles.workPeriod}>2017年9月~</div>
-        株式会社ブレイブソフト / インターン
-        <div className={styles.workPeriod}>2016年12月~</div>
-        株式会社ラントリップ / 業務委託契約
+        Bravesoft / Front End (JS - jQuery)
       </span>
     )
   }
