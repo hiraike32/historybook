@@ -4,7 +4,7 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "[name].js"
   },
   devServer: {
     contentBase: ".",
@@ -60,5 +60,11 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".scss"]
+  },
+  optimization: {
+    splitChunks: {
+      name: "vendor",
+      chunks: "initial"
+    }
   }
 };
