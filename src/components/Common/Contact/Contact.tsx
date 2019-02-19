@@ -1,8 +1,8 @@
 import classNames from "classnames/bind";
 import React from "react";
+import Background from "../../Common/Contact/Background";
 import mail from "../../Common/Contact/mail.png";
 import twitter from "../../Common/Contact/twittter.png";
-import Background from "./Background";
 import styles from "./Contact.scss";
 
 const cx = classNames.bind(styles);

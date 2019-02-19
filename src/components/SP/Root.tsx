@@ -2,7 +2,7 @@ import classNames from "classnames/bind";
 import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { About, Sidebar, Top, Works } from ".";
+import { About, Contact, Sidebar, Top, Works } from ".";
 import "../../styles/reset.scss";
 import styles from "../../styles/transition.scss";
 
@@ -29,6 +29,7 @@ const Root = ({ location }: any) => {
               <Route exact={true} path="/" component={Top} />
               <Route path="/about" component={About} />
               <Route path="/works" component={Works} />
+              <Route path="/contact" component={Contact} />
             </Switch>
           </div>
         </CSSTransition>
