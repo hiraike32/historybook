@@ -26653,56 +26653,6 @@ object-assign
             );
           }.bind(null, o.a.createElement);
         }.call(this, n(19));
-    },
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    function(e, c, n) {
-      var t;
-      /*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-      /*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-      !(function() {
-        "use strict";
-        var n = {}.hasOwnProperty;
-        function r() {
-          for (var e = [], c = 0; c < arguments.length; c++) {
-            var t = arguments[c];
-            if (t) {
-              var a = typeof t;
-              if ("string" === a || "number" === a) e.push(t);
-              else if (Array.isArray(t) && t.length) {
-                var i = r.apply(null, t);
-                i && e.push(i);
-              } else if ("object" === a)
-                for (var o in t) n.call(t, o) && t[o] && e.push(o);
-            }
-          }
-          return e.join(" ");
-        }
-        e.exports
-          ? ((r.default = r), (e.exports = r))
-          : void 0 ===
-              (t = function() {
-                return r;
-              }.apply(c, [])) || (e.exports = t);
-      })();
     }
   ]
 ]);

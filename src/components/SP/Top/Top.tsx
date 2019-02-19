@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from "classnames/bind";
 import React from "react";
 import TopBackground from "../../Common/Top/TopBackground";
 import styles from "./Top.scss";
