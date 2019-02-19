@@ -364,19 +364,19 @@
             a.default.createElement(
               "div",
               { className: c("workPeriod") },
-              "2018年8月~"
+              "2018/08~"
             ),
             "Dwango / Front End (JS - React)",
             a.default.createElement(
               "div",
               { className: c("workPeriod") },
-              "2018年6月~"
+              "2018/06~"
             ),
             "Smiloops / Back End (PHP - Laravel)",
             a.default.createElement(
               "div",
               { className: c("workPeriod") },
-              "2017年9月~"
+              "2017/09~"
             ),
             "Bravesoft / Front End (JS - jQuery)"
           )

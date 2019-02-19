@@ -39,11 +39,11 @@ const abouts: About[] = [
     title: "Carrer",
     detail: (
       <span>
-        <div className={cx("workPeriod")}>2018年8月~</div>
+        <div className={cx("workPeriod")}>2018/08~</div>
         Dwango / Front End (JS - React)
-        <div className={cx("workPeriod")}>2018年6月~</div>
+        <div className={cx("workPeriod")}>2018/06~</div>
         Smiloops / Back End (PHP - Laravel)
-        <div className={cx("workPeriod")}>2017年9月~</div>
+        <div className={cx("workPeriod")}>2017/09~</div>
         Bravesoft / Front End (JS - jQuery)
       </span>
     )
