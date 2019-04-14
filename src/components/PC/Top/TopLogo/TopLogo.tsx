@@ -6,7 +6,7 @@ import styles from "./TopLogo.scss";
 
 const cx = classNames.bind(styles);
 
-const names = ["T", "a", "k", "u", "y", "a", "/", "H", "i", "r", "i", "k", "e"];
+const names = ["T", "a", "k", "u", "y", "a", "/", "H", "i", "r", "a", "i", "k", "e"];
 
 class TopLogo extends Component<{}> {
   componentDidMount() {
