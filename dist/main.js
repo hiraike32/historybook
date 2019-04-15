@@ -932,7 +932,22 @@
       c = r(t(1)),
       i = o(t(74)),
       l = s.default.bind(i.default),
-      d = ["T", "a", "k", "u", "y", "a", "/", "H", "i", "r", "i", "k", "e"];
+      d = [
+        "T",
+        "a",
+        "k",
+        "u",
+        "y",
+        "a",
+        "/",
+        "H",
+        "i",
+        "r",
+        "a",
+        "i",
+        "k",
+        "e"
+      ];
     e.default = class extends c.Component {
       componentDidMount() {
         a.default({
@@ -1707,7 +1722,22 @@
       c = r(t(1)),
       i = o(t(118)),
       l = s.default.bind(i.default),
-      d = ["T", "a", "k", "u", "y", "a", "/", "H", "i", "r", "i", "k", "e"];
+      d = [
+        "T",
+        "a",
+        "k",
+        "u",
+        "y",
+        "a",
+        "/",
+        "H",
+        "i",
+        "r",
+        "a",
+        "i",
+        "k",
+        "e"
+      ];
     e.default = class extends c.Component {
       componentDidMount() {
         a.default
