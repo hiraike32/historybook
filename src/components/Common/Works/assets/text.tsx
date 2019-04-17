@@ -22,7 +22,7 @@ const works = [
   },
   {
     item: "codepen",
-    url: "https://codepen.io/dashboard/",
+    url: "https://codepen.io/hiraike32/",
     src: codepen,
     title: "codepen",
     detail: (
