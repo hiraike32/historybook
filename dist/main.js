@@ -1084,7 +1084,7 @@
         },
         {
           item: "codepen",
-          url: "https://codepen.io/dashboard/",
+          url: "https://codepen.io/hiraike32/",
           src: s.default,
           title: "codepen",
           detail: r.default.createElement(
