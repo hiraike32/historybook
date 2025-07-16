@@ -1,73 +1,36 @@
 {
-  "name": "react-driving",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "new-hiraike32",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js --history-api-fallback",
-    "fix": "yarn lint:ts --fix && yarn lint:css --fix",
-    "lint:css": "stylelint \"./src/**/*.{css,scss}\"",
-    "lint:ts": "tslint './src/**/*.{ts,tsx}'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "tslint --fix",
-      "git add"
-    ],
-    "*.{md,json,js}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.{css,scss}": [
-      "stylelint --fix",
-      "git add"
-    ]
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "animejs": "^3.2.1",
-    "classnames": "^2.3.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0",
-    "react-transition-group": "^4.4.5"
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "animejs": "^4.0.2",
+    "framer-motion": "^12.23.6",
+    "next": "^15.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.7.0",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.89.2"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/animejs": "^3.1.4",
-    "@types/classnames": "^2.3.1",
-    "@types/jest": "^29.5.11",
-    "@types/react": "^18.2.46",
-    "@types/react-dom": "^18.2.19",
-    "@types/react-router-dom": "^5.3.3",
-    "@types/react-transition-group": "^4.4.8",
-    "@babel/core": "^7.24.7",
-    "babel-loader": "^9.1.4",
-    "css-loader": "^6.8.1",
-    "dotenv-webpack": "^8.0.1",
-    "file-loader": "^6.2.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "postcss-loader": "^8.1.1",
-    "prettier": "^3.2.5",
-    "regenerator-runtime": "^0.14.1",
-    "sass": "^1.77.4",
-    "sass-loader": "^14.1.1",
-    "style-loader": "^3.3.4",
-    "stylelint": "^16.4.2",
-    "stylelint-config-standard": "^36.0.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.4.5",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-transition-group": "^4.4.12",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

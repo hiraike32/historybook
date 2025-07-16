@@ -1,0 +1,32 @@
+@use "../../../styles/_colors.module.scss" as colors;
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: colors.$base-white;
+  overflow: hidden;
+
+  .contact {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: center; /* 水平方向の中央揃え */
+    gap: 4px; /* アイコンとテキストの間隔 */
+    text-decoration: none; /* リンクの下線を削除 */
+    color: inherit; /* テキストの色を継承 */
+
+    .icon {
+      width: 1rem; /* アイコンの幅 */
+      height: 1rem; /* アイコンの高さ */
+      margin-right: 0.5rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

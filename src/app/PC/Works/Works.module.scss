@@ -1,0 +1,87 @@
+@use "../../../styles/_colors.module.scss" as colors;
+
+.container {
+  overflow: hidden;
+  padding: 5vh 5vw;
+  display: grid;
+  grid-template-rows: 35vh 20vh 35vh;
+  grid-template-columns: repeat(9, 10vw);
+  position: relative;
+
+  .pageTitle {
+    grid-row: 2;
+    grid-column: 4/7;
+    color: colors.$base-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .pageDetail {
+      font-size: 1rem;
+    }
+  }
+
+  .work {
+    background: colors.$base-white;
+    position: relative;
+
+    a {
+      text-decoration: none;
+
+      .flame {
+        width: 100%;
+        height: 100%;
+        padding: 0.25rem;
+        position: absolute;
+
+        .thumbnail {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 0%;
+        }
+      }
+
+      .description {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+        background: colors.$base-black;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+        padding: 1rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        .title {
+          color: colors.$base-white;
+          margin-bottom: 0.5rem;
+          font-size: 1.2rem;
+        }
+
+        .detail {
+          color: colors.$font-gray;
+        }
+      }
+    }
+  }
+
+  .qiita {
+    grid-row: 1;
+    grid-column: 4/7;
+  }
+
+  .codepen {
+    grid-row: 3;
+    grid-column: 2/5;
+  }
+
+  .blog {
+    grid-row: 3;
+    grid-column: 6/9;
+  }
+}

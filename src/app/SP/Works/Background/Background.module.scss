@@ -1,0 +1,72 @@
+@use "../../../../styles/_colors.module.scss" as colors;
+
+.container {
+  overflow: hidden;
+
+  .border {
+    position: fixed;
+  }
+
+  .border0 {
+    border-bottom: 2px dashed colors.$bgColor0;
+    top: 60vh;
+    left: 0;
+    transform: rotate(-75deg);
+    transform-origin: 0 0;
+    width: 80vw;
+  }
+
+  .border1 {
+    border-bottom: 2px dashed colors.$bgColor1;
+    top: 0;
+    left: 35vw;
+    transform: rotate(15deg);
+    transform-origin: 0 0;
+    width: 100vw;
+  }
+
+  .border2 {
+    border-bottom: 2px dashed colors.$bgColor2;
+    top: 10vh;
+    left: 100vw;
+    transform: rotate(95deg);
+    transform-origin: 0 0;
+    width: 80vw;
+  }
+
+  .border3 {
+    border-bottom: 2px dashed colors.$bgColor3;
+    top: 70vh;
+    left: 100vw;
+    transform: rotate(150deg);
+    transform-origin: 0 0;
+    width: 80vw;
+  }
+
+  .border4 {
+    border-bottom: 2px dashed colors.$bgColor4;
+    top: 100vh;
+    left: 80vw;
+    transform: rotate(-170deg);
+    transform-origin: 0 0;
+    width: 100vw;
+  }
+
+  .border5 {
+    border-bottom: 2px dashed colors.$bgColor5;
+    top: 100vh;
+    left: 10vw;
+    transform: rotate(-100deg);
+    transform-origin: 0 0;
+    width: 100vw;
+  }
+
+  .border6 {
+    border-bottom: 2px dashed colors.$bgColor6;
+    top: 15vh;
+    left: 0;
+    transform: rotate(-5deg);
+    transform-origin: 0 0;
+    width: 100vw;
+  }
+}
