@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import React from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { About, Contact, Sidebar, Top, Works } from ".";
 import "../../styles/reset.scss";
@@ -25,12 +25,12 @@ const Root = ({ location }: any) => {
           timeout={3000}
         >
           <div className={cx("routeWrapper")}>
-            <Switch location={location}>
-              <Route exact={true} path="/" component={Top} />
-              <Route path="/about" component={About} />
-              <Route path="/works" component={Works} />
-              <Route path="/contact" component={Contact} />
-            </Switch>
+            <Routes location={location}>
+              <Route path="/" element={<Top />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
           </div>
         </CSSTransition>
       </TransitionGroup>
@@ -39,4 +39,4 @@ const Root = ({ location }: any) => {
   );
 };
 
-export default withRouter(Root);
+export default Root;

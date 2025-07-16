@@ -7,10 +7,10 @@ module.exports = {
     filename: "[name].js"
   },
   devServer: {
-    contentBase: ".",
-    publicPath: "/dist/",
-    port: 8888,
-    inline: true
+    static: {
+      directory: path.resolve(__dirname, "dist")
+    },
+    port: 8888
   },
   devtool: "source-map",
   module: {
@@ -27,16 +27,17 @@ module.exports = {
           {
             loader: "style-loader",
             options: {
-              sourceMap: true
+              injectType: "styleTag"
             }
           },
           {
             loader: "css-loader",
             options: {
-              root: ".",
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[path]_[local]_[hash:base64:5]"
+              modules: {
+                auto: true,
+                localIdentName: "[path]_[local]_[hash:base64:5]"
+              },
+              importLoaders: 1
             }
           },
           {
