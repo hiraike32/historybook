@@ -1,1 +1,16 @@
-globalThis.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:["static/chunks/webpack-27d948713111d4d8.js","static/chunks/4bd1b696-cf72ae8a39fa05aa.js","static/chunks/32-6bcfa269b2801883.js","static/chunks/main-app-f3a0f7fa1ae6bfca.js"],rootMainFilesTree:{},pages:{"/":["static/chunks/webpack-27d948713111d4d8.js","static/chunks/framework-7c95b8e5103c9e90.js","static/chunks/main-75c35f39304f133f.js","static/css/7aa994f785094380.css","static/chunks/pages/index-d660150149dca2a0.js"],"/_app":["static/chunks/webpack-27d948713111d4d8.js","static/chunks/framework-7c95b8e5103c9e90.js","static/chunks/main-75c35f39304f133f.js","static/css/e0f9d1bca6917515.css","static/chunks/pages/_app-55d02c89b3d04c21.js"],"/_error":["static/chunks/webpack-27d948713111d4d8.js","static/chunks/framework-7c95b8e5103c9e90.js","static/chunks/main-75c35f39304f133f.js","static/chunks/pages/_error-03529f2c21436739.js"],"/about":["static/chunks/webpack-27d948713111d4d8.js","static/chunks/framework-7c95b8e5103c9e90.js","static/chunks/main-75c35f39304f133f.js","static/chunks/98bef5de-648a2d07172ff4c8.js","static/chunks/460-238dee84afb0a7c5.js","static/css/e1d71f0c4b41a497.css","static/chunks/pages/about-c63e5b4639bbf5bf.js"],"/sns":["static/chunks/webpack-27d948713111d4d8.js","static/chunks/framework-7c95b8e5103c9e90.js","static/chunks/main-75c35f39304f133f.js","static/chunks/587-e14c3a81fb62bda3.js","static/css/137380ae89327ee0.css","static/chunks/pages/sns-b2d57327089dea8a.js"],"/works":["static/chunks/webpack-27d948713111d4d8.js","static/chunks/framework-7c95b8e5103c9e90.js","static/chunks/main-75c35f39304f133f.js","static/chunks/587-e14c3a81fb62bda3.js","static/css/36a1c563286a3fac.css","static/chunks/pages/works-e1be4222300bb607.js"]},ampFirstPages:[]},globalThis.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "ampFirstPages": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];
