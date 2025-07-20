@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   },
   ...(isProd && {
     basePath: "/historybook",
-    assetPrefix: "/historybook",
+    assetPrefix: "https://hiraike32.github.io/historybook",
   }),
 };
 

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/app/Common/Sidebar/Users/hiraike-takuya/AndroidStudioProjects/historybook/src/app/Common/Sidebar/Sidebar.module.scss","turbopack:///turbopack:///[project]/src/app/Common/Sidebar/Users/hiraike-takuya/AndroidStudioProjects/historybook/src/styles/_colors.module.scss"],"sourcesContent":["@use \"../../../styles/_colors.module.scss\" as colors;\n\n.sideIconContainer {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  background: colors.$side-icon-black;\n  width: 5rem;\n  height: 5rem;\n  z-index: 20;\n  cursor: pointer;\n}\n\n.sideIcon {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n  width: 50%;\n  height: 50%;\n  fill: none;\n  border: 3px inset colors.$bgColor2;\n  border-radius: 50%;\n  vertical-align: middle;\n}\n","$bgColor0: #f00;\n$bgColor1: #0afffb;\n$bgColor2: #f49e00;\n$bgColor3: #ffff1e;\n$bgColor4: #0df400;\n$bgColor5: #e60aff;\n$bgColor6: #004aff;\n\n$base-white: #fff;\n$base-black: #000;\n$font-white: #c4c4c4;\n$font-gray: #8c8c8c;\n$side-icon-black: #272727;\n$side-menu-black: #0f0f0f;\n\n$transparent: rgba(0, 0, 0, 0);\n\n$link-blue: #798bd8;\n"],"names":[],"mappings":"AAEA;;;;;;;;;;;;;AAaA"}}]
-}

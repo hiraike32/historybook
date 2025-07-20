@@ -12,7 +12,7 @@
     },
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "/historybook",
+    "assetPrefix": "https://hiraike32.github.io/historybook",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
@@ -58,7 +58,13 @@
       "dangerouslyAllowSVG": false,
       "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
-      "remotePatterns": [],
+      "remotePatterns": [
+        {
+          "hostname": "hiraike32.github.io",
+          "protocol": "https",
+          "port": ""
+        }
+      ],
       "unoptimized": true
     },
     "devIndicators": {

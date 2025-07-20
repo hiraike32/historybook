@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/styles/Users/hiraike-takuya/AndroidStudioProjects/historybook/src/styles/base.scss"],"sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Libre+Baskerville|Sawarabi+Mincho\");\n\nbody {\n  background: #232323;\n  font-family: \"Libre Baskerville\", \"Sawarabi Mincho\", sans-serif;\n}\n\n@media (max-width: 960px) {\n  h1 {\n    font-size: 1.5rem;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;AAAA;EAAA"}}]
-}

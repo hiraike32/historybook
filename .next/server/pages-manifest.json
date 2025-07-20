@@ -1,8 +1,10 @@
 {
-  "/": "pages/index.js",
+  "/about": "pages/about.html",
+  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
+  "/": "pages/index.html",
+  "/works": "pages/works.html",
+  "/sns": "pages/sns.html",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.js",
-  "/sns": "pages/sns.js",
-  "/works": "pages/works.js"
+  "/404": "pages/404.html"
 }
