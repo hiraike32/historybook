@@ -1,0 +1,168 @@
+/* [project]/src/app/Common/Top/TopBackground/TopBackground.module.scss.module.css [client] (css) */
+.TopBackground-module-scss-module__Z8xRjW__bgContainer {
+  perspective: 5vmin;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.TopBackground-module-scss-module__Z8xRjW__background {
+  will-change: transform, opacity;
+  width: 30vmin;
+  height: 30vmin;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(0);
+}
+
+.TopBackground-module-scss-module__Z8xRjW__bgRotate1 {
+  animation: 20s linear infinite TopBackground-module-scss-module__Z8xRjW__scaleup1;
+}
+
+.TopBackground-module-scss-module__Z8xRjW__bgRotate2 {
+  animation: 20s linear infinite TopBackground-module-scss-module__Z8xRjW__scaleup2;
+}
+
+.TopBackground-module-scss-module__Z8xRjW__bgRotate3 {
+  animation: 20s linear infinite TopBackground-module-scss-module__Z8xRjW__scaleup3;
+}
+
+.TopBackground-module-scss-module__Z8xRjW__bgRotate4 {
+  animation: 20s linear infinite TopBackground-module-scss-module__Z8xRjW__scaleup4;
+}
+
+.TopBackground-module-scss-module__Z8xRjW__bgRotate5 {
+  animation: 20s linear infinite TopBackground-module-scss-module__Z8xRjW__scaleup5;
+}
+
+.TopBackground-module-scss-module__Z8xRjW__bgRotate6 {
+  animation: 20s linear infinite TopBackground-module-scss-module__Z8xRjW__scaleup6;
+}
+
+@keyframes TopBackground-module-scss-module__Z8xRjW__scaleup1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin)rotate(45deg);
+  }
+}
+
+@keyframes TopBackground-module-scss-module__Z8xRjW__scaleup2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin)rotate(90deg);
+  }
+}
+
+@keyframes TopBackground-module-scss-module__Z8xRjW__scaleup3 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin)rotate(135deg);
+  }
+}
+
+@keyframes TopBackground-module-scss-module__Z8xRjW__scaleup4 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin)rotate(-45deg);
+  }
+}
+
+@keyframes TopBackground-module-scss-module__Z8xRjW__scaleup5 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin)rotate(-90deg);
+  }
+}
+
+@keyframes TopBackground-module-scss-module__Z8xRjW__scaleup6 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 6vmin)rotate(-135deg);
+  }
+}
+
+/*# sourceMappingURL=src_app_Common_Top_TopBackground_TopBackground_module_scss_module_css_14eac1ce._.single.css.map*/

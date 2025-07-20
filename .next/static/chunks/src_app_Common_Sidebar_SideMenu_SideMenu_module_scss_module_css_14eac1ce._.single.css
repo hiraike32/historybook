@@ -1,0 +1,55 @@
+/* [project]/src/app/Common/Sidebar/SideMenu/SideMenu.module.scss.module.css [client] (css) */
+.SideMenu-module-scss-module__0IOV8W__sideMenuContainer {
+  opacity: 0;
+  z-index: 19;
+  background: #0f0f0f;
+  width: 15rem;
+  height: 30rem;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15rem;
+}
+
+.SideMenu-module-scss-module__0IOV8W__sideMenuBox {
+  flex-flow: column;
+  justify-content: space-between;
+  height: 60%;
+  margin: auto;
+  padding: 10% 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7.5rem;
+}
+
+.SideMenu-module-scss-module__0IOV8W__sideMenu {
+  color: #c4c4c4;
+  cursor: pointer;
+  font-size: .8rem;
+  position: relative;
+}
+
+.SideMenu-module-scss-module__0IOV8W__redHover:hover {
+  color: red;
+}
+
+.SideMenu-module-scss-module__0IOV8W__greenHover:hover {
+  color: #0df400;
+}
+
+.SideMenu-module-scss-module__0IOV8W__blueHover:hover {
+  color: #0afffb;
+}
+
+.SideMenu-module-scss-module__0IOV8W__orangeHover:hover {
+  color: #f49e00;
+}
+
+.SideMenu-module-scss-module__0IOV8W__sideMenuBox a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=src_app_Common_Sidebar_SideMenu_SideMenu_module_scss_module_css_14eac1ce._.single.css.map*/

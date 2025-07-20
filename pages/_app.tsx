@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Sidebar />
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
         <motion.div
           key={router.route}
           initial={{ opacity: 0 }}
